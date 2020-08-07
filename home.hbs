@@ -1,0 +1,21 @@
+{{!< default}}
+{{#page}}
+<article class="post u-relative">
+    <div class="pif u-relative u-bgDark">
+            {{!-- Featured Image - partials/helper/helper-image-cover.hbs --}}
+            {{> "helper/helper-image-cover"}}
+            {{!-- bg --}}
+            <div class="u-absolute0 zindex2 pif-grad"></div>
+
+        <header class="post-header u-container u-maxWidth740 u-paddingTop30 u-relative zindex3">
+            {{!-- Article Title --}}
+            <h1 class="post-title u-marginBottom20 u-fontSizeLargest u-md-fontSizeLarger">{{title}}</h1>
+            {{!-- Article Excerpt  --}}
+            <div class="post-wrap u-maxWidth1000 u-relative u-marginAuto">
+                {{!-- All Content --}}
+                <div id="post-body" class="post-body u-container u-maxWidth740 u-relative" style="color: white">{{content}}</div>
+            </div>
+        </header>
+    </div>
+</article>
+{{/page}}
